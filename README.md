@@ -1,1 +1,9 @@
-# HDKD
+#  From Image to Pixel: Hierarchical Decoupled Distillation for Low-Resolution Object Detection
+After the paper is accepted, we will provide code for this paper.
+
+## Abstract
+Knowledge distillation (KD) aims to transfer knowledge from high-capacity teacher models to lightweight student models. Existing research on object detection primarily focuses on model architecture compression, such methods fail to meet the deployment requirements of resource-constrained devices. Due to the limited communication, the low-resolution (LR) inputs they usually obtain effectively reduce the computational load, but the severe loss of valuable information leads to notable performance degradation. From this insight, we propose a novel resolution-aware distillation framework tailored for object detection, called Hierarchical Decoupled Knowledge Distillation (HDKD), which leverages the guidance of high-resolution (HR) teacher models to learn scale-specific hierarchical representations. In particular, HDKD includes a scale-aware decoupled module that separates scale-specific objects using multi-scale convolutional branches and combines a gating mechanism for scale-specific enhancement to improve the representation of objects at the same scale. Additionally, a hierarchical distillation strategy is introduced at the image, instance, and pixel levels to progressively refine the semantic and structural representations of LR features, effectively enhancing the student model's performance in cross-resolution knowledge transfer. Extensive experiments on MS COCO2017 and two small-object detection benchmarks demonstrate that HDKD consistently outperforms state-of-the-art KD methods, achieving a superior balance between accuracy and efficiency.
+
+## Results
+![image](https://github.com/D-ace11/HDKD/blob/main/figure1.png)
+![image](https://github.com/D-ace11/HDKD/blob/main/figure2.png)
